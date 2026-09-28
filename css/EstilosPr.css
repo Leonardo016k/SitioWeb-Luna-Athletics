@@ -1,0 +1,194 @@
+/* Contenedor principal */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    color: #f0f0f8;
+}
+
+/* Caja de cada producto */
+.producto {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+/* Estilo de la imagen */
+.imagen-producto {
+    width: 80%;
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen dentro de su contenedor */
+    border-radius: 5px;
+    margin: 0 auto; /* Centra la imagen */
+}
+/* Nombre y precio del producto */
+.nombre-producto, .precio-producto {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botón de añadir al carrito */
+.boton-carrito {
+    background-color: rgb(46, 32, 32)  ;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-carrito:hover {
+    background-color: rgb(46, 32, 32);
+}
+
+/* Animación al pasar el ratón sobre el producto */
+.producto:hover {
+    transform: scale(1.05);
+}
+/* Estilos para la sección de Servicios */
+.servicios {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.servicios h2 {
+    color: rgb(46, 32, 32); /* Morado oscuro */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Contenedor de Servicios */
+.contenedor-servicios {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilo para cada tarjeta de servicio */
+.servicio {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el cursor */
+}
+
+/* Imagen de servicio */
+.imagen-servicio {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.carrito-navbar {
+    background-color: rgb(46, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto; /* Coloca el botón al extremo derecho */
+}
+
+.carrito-navbar:hover {
+    background-color:rgb(46, 32, 32);
+    color: #f7f7f7;
+}
+.cantidad-producto input[type="number"] {
+    width: 60px; /* Ancho del selector */
+    height: 40px; /* Alto del selector */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center; /* Centrar los números */
+    margin-left: 10px; /* Separación respecto al texto "Cantidad:" */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #333; /* Cambia el color de la letra */
+    background-color: #f9f9f9; /* Cambia el fondo */
+}
+/* Producto Nuevo */
+.product.nuevo {
+    border-color: var(--primary);
+    border-width: 4px;
+    border-style: solid;
+    position: relative; /* Necesario para posicionar ::before */
+    z-index: 1;
+}
+
+.product.nuevo::before {
+    content: "Nuevo"; /* o "Popular" */
+    position: absolute;
+    top: 5px; /* Ajusta el espacio desde el borde superior */
+    left: 5px; /* Ajusta el espacio desde el borde izquierdo */
+    background-color: var(--primary); /* Color distintivo */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 2; /* Asegura que esté siempre visible */
+}
+
+/* Producto Popular */
+.product.popular {
+    border-color: var(--secondary);
+    border-width: 4px;
+    border-style: solid;
+    position: relative; /* Necesario para posicionar ::before */
+    z-index: 1;
+}
+
+.product.popular::before {
+    content: "Popular"; /* o "Popular" */
+    position: absolute;
+    top: 5px; /* Ajusta el espacio desde el borde superior */
+    left: 5px; /* Ajusta el espacio desde el borde izquierdo */
+    background-color: var(--secondary); /* Color distintivo */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 2; /* Asegura que esté siempre visible */
+}
+
+/* Definimos los colores */
+:root {
+    --primary: #28a745; /* Color para productos nuevos */
+    --secondary: #007bff; /* Color para productos populares */
+}
+.buscador {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#input-buscar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.imagen-producto {
+    margin-bottom: 10px; /* Separación adicional debajo de la imagen */
+}

@@ -1,0 +1,290 @@
+
+        body {
+            background-color: #0B1120;
+            color: #fff;
+        }
+        .admin-header {
+            background-color: #05080f;
+            /* AUMENTÉ ESTO A 180px PARA QUE NO SE CORTE EL TEXTO */
+            padding: 180px 0 40px 0; 
+            border-bottom: 2px solid #00C2FF;
+            text-align: center;
+        }
+        .welcome-text {
+            color: #00C2FF;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .admin-card {
+            background-color: #05080f;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .admin-card:hover {
+            transform: translateY(-10px);
+            border-color: #00C2FF;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.2);
+        }
+        .admin-icon {
+            font-size: 3rem;
+            color: #00C2FF;
+            margin-bottom: 20px;
+        }
+        .btn-admin {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin-top: 15px;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-admin:hover {
+            background: #00C2FF;
+            border-color: #00C2FF;
+            color: #000;
+            text-decoration: none;
+        }
+
+         /* Estilos para la Tabla Dark Gym */
+        .table-dark-gym {
+            background-color: #05080f;
+            color: #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table-dark-gym thead {
+            background-color: #00C2FF;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .table-dark-gym td, .table-dark-gym th {
+            border-color: #222;
+            vertical-align: middle;
+        }
+        .btn-action {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .btn-edit {
+            background-color: #ffc107;
+            color: #000;
+        }
+        .btn-delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .btn-create {
+            background-color: #00C2FF;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        /* Estilos Dark Gym para el formulario de edición */
+        .edit-card {
+            background-color: #05080f; /* Fondo Negro */
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+        }
+
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* Botón Actualizar */
+        .btn-update {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 40px;
+            border-radius: 30px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .btn-update:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+        .admin-form-card {
+            background-color: #05080f; /* Fondo Negro */
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+        }
+
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* Botón Guardar */
+        .btn-save {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 40px;
+            border-radius: 30px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .btn-save:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+        .admin-form-card {
+            background-color: #05080f;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+        }
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .btn-save {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 40px;
+            border-radius: 30px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .btn-save:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+        /* Estilos para el ojo de contraseña */
+        .password-wrapper {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #00C2FF;
+            z-index: 10;
+        }
+        .toggle-password:hover {
+            color: #fff;
+        }
+                .edit-card {
+            background-color: #05080f;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+        }
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+        }
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .btn-update {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 40px;
+            border-radius: 30px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .btn-update:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+        /* Estilos para ver contraseña */
+        .password-wrapper {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #00C2FF;
+            z-index: 10;
+        }

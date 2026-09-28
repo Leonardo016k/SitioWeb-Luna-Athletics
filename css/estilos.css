@@ -1,0 +1,58 @@
+.img{
+    width: 5px;
+}
+.imglogo{
+    width: 2%;
+    height: 5;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y la imagen */
+    justify-content: space-between; /* Añade espacio entre elementos */
+    margin: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.carrito-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.carrito-icon {
+    width: 30px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén las proporciones de la imagen */
+}
+.offer-card {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Centrar el texto */
+}
+
+.offer-card img {
+    border-radius: 10px; /* Bordes redondeados */
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.offer-card h5 {
+    font-weight: bold;
+}
+
+.offer-card button {
+    border: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.offer-card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Más sombra al hacer hover */
+}

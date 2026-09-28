@@ -1,0 +1,826 @@
+/* custom_lunalift.css */
+
+/* Cambiar el color café del Hover (al pasar el mouse) y Active (página actual) */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #00C2FF !important; /* Azul Eléctrico */
+}
+
+/* Opcional: Si quieres cambiar el color de la letra normal también */
+/*
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+*/
+/* Forzar modo oscuro en la sección de historia */
+.about-section, /* Si tu sección tiene una clase, úsala */
+section { 
+    background-color: #0B1120 !important; /* Fondo oscuro */
+}
+
+/* El subtítulo pequeño (SOBRE NOSOTROS) y la línea */
+.section-title {
+    color: #00C2FF !important; /* Azul neón en vez de café */
+}
+.section-title::after {
+    background-color: #00C2FF !important; /* Línea azul vertical */
+}
+
+/* Título "Nuestra historia" */
+h1, h2, h3 {
+    color: #ffffff !important; /* Texto blanco */
+    text-transform: uppercase; /* Mayúsculas se ven más fuertes */
+    font-weight: 800 !important; /* Más grueso */
+}
+
+/* Párrafo de texto */
+p {
+    color: #b0b3b8 !important; /* Gris claro para leer fácil */
+    font-size: 1.1rem;
+}
+
+/* Botón Leer Más */
+.btn-primary, .btn {
+    background-color: transparent !important;
+    border: 2px solid #00C2FF !important; /* Borde neón */
+    color: #00C2FF !important;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover, .btn:hover {
+    background-color: #00C2FF !important; /* Relleno al pasar el mouse */
+    color: #000000 !important; /* Letras negras */
+    box-shadow: 0 0 15px rgba(0, 194, 255, 0.6); /* Brillo */
+}
+/* Eliminar el efecto de borde rasgado blanco */
+.overlay-top::before,
+.overlay-bottom::after {
+    display: none !important;
+    background: none !important;
+}
+/* --- ESTILOS DEL FOOTER DARK MODE --- */
+
+.footer {
+    /* Esto elimina la imagen de fondo café y pone el color oscuro */
+    background-image: none !important;
+    background-color: #05080f !important; /* Un tono un poco más oscuro que el resto para diferenciarlo */
+    color: #ffffff !important; /* Texto blanco */
+    margin-top: 0 !important; /* Elimina espacios blancos extra si los hay */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Títulos del footer (Ponte en contacto, Síganos, etc.) */
+.footer h4, 
+.footer h3,
+.footer h1,
+.text-primary { /* Sobrescribimos el color dorado */
+    color: #00C2FF !important; /* Azul Neón */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Texto normal y enlaces en el footer */
+.footer p, 
+.footer a {
+    color: #b0b3b8 !important; /* Gris claro */
+    font-size: 0.95rem;
+}
+
+.footer a:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Eliminar la línea blanca de separación si es un ::before o ::after */
+.footer::before,
+.footer::after {
+    display: none !important;
+}
+/* --- Opción 3: Cristal Esmerilado --- */
+.offer-card {
+    background: rgba(255, 255, 255, 0.05); /* Fondo blanco muy transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque detrás de la tarjeta */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil y claro */
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: all 0.3s ease;
+}
+
+.offer-card img {
+    border-radius: 15px;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.offer-card:hover {
+    border-color: #00C2FF; /* El borde se vuelve azul neón */
+    box-shadow: 0 0 20px rgba(0, 194, 255, 0.5); /* Resplandor neón */
+}
+/* Estilo del Buscador */
+        #input-buscar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 50px;
+            border: 2px solid #333;
+            background-color: #05080f;
+            color: #fff;
+            font-size: 1.1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+        #input-buscar:focus {
+            border-color: #00C2FF; /* Borde Neón al escribir */
+            box-shadow: 0 0 15px rgba(0, 194, 255, 0.3);
+        }
+        #input-buscar::placeholder {
+            color: #666;
+        }
+
+        /* Estilo de la Tarjeta de Producto */
+        .producto-card {
+            background-color: #05080f; /* Fondo Negro */
+            border: 1px solid #222;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-5px);
+            border-color: #00C2FF; /* Borde Neón al pasar mouse */
+            box-shadow: 0 5px 20px rgba(0, 194, 255, 0.2);
+        }
+
+        .producto-img-container {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .producto-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .producto-card:hover .producto-img-container img {
+            transform: scale(1.1); /* Zoom suave en la imagen */
+        }
+
+        .producto-info {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nombre-producto {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .precio-producto {
+            color: #00C2FF; /* Precio en Azul Neón */
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-add-cart {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-add-cart:hover {
+            background: #00C2FF;
+            color: #000;
+        }
+        
+        /* Selector de cantidad pequeño */
+        .qty-input {
+            background: #111;
+            border: 1px solid #444;
+            color: white;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+                /* Inputs del formulario */
+        .form-control {
+            background-color: #05080f !important; /* Fondo negro */
+            border: 1px solid #333 !important;    /* Borde sutil */
+            color: #fff !important;               /* Texto blanco */
+        }
+        
+        .form-control:focus {
+            border-color: #00C2FF !important;     /* Borde neón al hacer click */
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        /* Placeholder color */
+        .form-control::placeholder {
+            color: #666 !important;
+        }
+
+        /* Iconos de contacto */
+        .contact-icon {
+            color: #00C2FF !important; /* Azul Neón */
+        }
+
+        /* Mapa en escala de grises para que combine */
+        iframe {
+            filter: grayscale(100%) invert(90%); /* Efecto mapa oscuro */
+            border: 2px solid #222 !important;
+        }
+                /* Contenedor gris oscuro del formulario */
+        .register-form {
+            background-color: #05080f; /* Fondo Negro Profundo */
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        /* Estilos para los campos de texto (Inputs) y Listas (Selects) */
+        .form-control {
+            background-color: #0B1120 !important; /* Fondo Azul Muy Oscuro */
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+            border-radius: 5px;
+        }
+        
+        /* Efecto Neón al hacer clic en un campo */
+        .form-control:focus {
+            border-color: #00C2FF !important; 
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        /* Color de las etiquetas de texto (Nombre, Edad, etc.) */
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* Estilo para los botones de radio (Masculino/Femenino) seleccionados */
+        .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: #00C2FF !important;
+            border-color: #00C2FF !important;
+        }
+
+        /* Estilo del Botón "REGISTRARSE" */
+        .btn-register {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 40px;
+            border-radius: 30px;
+            transition: 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Efecto Hover del botón */
+        .btn-register:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+        .password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    cursor: pointer;
+    color: #00C2FF; /* Color Neón */
+    z-index: 10;
+}
+
+.toggle-password:hover {
+    color: #fff; /* Blanco al pasar el mouse */
+}
+
+ /* Contenedor de la tarjeta de login */
+        .login-container {
+            background-color: #05080f; /* Negro profundo */
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            max-width: 500px; /* Ancho máximo para que no se vea estirado */
+            margin: 0 auto;   /* Centrado horizontal */
+        }
+
+        /* Título del formulario */
+        .login-title {
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        /* Inputs */
+        .form-control {
+            background-color: #0B1120 !important; /* Fondo oscuro */
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+            border-radius: 5px;
+        }
+        
+        .form-control:focus {
+            border-color: #00C2FF !important; /* Borde neón al escribir */
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        /* Labels */
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        /* Botón Iniciar Sesión */
+        .btn-login {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 0;
+            border-radius: 30px;
+            transition: 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+
+        /* Link de registro */
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #bbb;
+        }
+        .register-link a {
+            color: #00C2FF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+                .login-container {
+            background-color: #05080f;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .login-title {
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+            border-radius: 5px;
+        }
+        
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .btn-login {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 0;
+            border-radius: 30px;
+            transition: 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #bbb;
+        }
+        .register-link a {
+            color: #00C2FF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        /* Estilo para el icono del ojo */
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #00C2FF;
+            z-index: 10;
+        }
+        .toggle-password:hover {
+            color: #fff;
+        }
+        /* carrito */
+         /* Tabla del Carrito */
+        .cart-table {
+            background-color: #05080f;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #222;
+        }
+        
+        .cart-table th {
+            background-color: #111;
+            color: #00C2FF; /* Encabezados Azul Neón */
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .cart-table td {
+            border-top: 1px solid #222;
+            vertical-align: middle;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .cart-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        /* Resumen del Pedido */
+        .cart-summary {
+            background-color: #05080f;
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid #00C2FF; /* Borde Neón para destacar */
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.1);
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        .summary-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Botón Pagar */
+        .btn-checkout {
+            background-color: #00C2FF;
+            color: #000;
+            font-weight: bold;
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-checkout:hover {
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+
+        /* Input de cantidad */
+        .qty-input-cart {
+            background: #111;
+            border: 1px solid #444;
+            color: white;
+            width: 60px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Botón Eliminar */
+        .btn-remove {
+            color: #ff4444;
+            background: transparent;
+            border: 1px solid #ff4444;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        
+        .btn-remove:hover {
+            background: #ff4444;
+            color: #fff;
+        }
+        /* Search Input Style */
+        #input-buscar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 50px;
+            border: 2px solid #333;
+            background-color: #05080f;
+            color: #fff;
+            font-size: 1.1rem;
+            outline: none;
+            transition: 0.3s;
+        }
+        #input-buscar:focus {
+            border-color: #00C2FF;
+            box-shadow: 0 0 15px rgba(0, 194, 255, 0.3);
+        }
+        #input-buscar::placeholder {
+            color: #666;
+        }
+
+        /* Product Card Style */
+        .producto-card {
+            background-color: #05080f;
+            border: 1px solid #222;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-5px);
+            border-color: #00C2FF;
+            box-shadow: 0 5px 20px rgba(0, 194, 255, 0.2);
+        }
+
+        .producto-img-container {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .producto-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .producto-card:hover .producto-img-container img {
+            transform: scale(1.1);
+        }
+
+        .producto-info {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .nombre-producto {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .precio-producto {
+            color: #00C2FF;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-add-cart {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn-add-cart:hover {
+            background: #00C2FF;
+            color: #000;
+        }
+        
+        .qty-input {
+            background: #111;
+            border: 1px solid #444;
+            color: white;
+            width: 50px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+                .login-container {
+            background-color: #05080f;
+            padding: 40px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .login-title {
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .form-control {
+            background-color: #0B1120 !important;
+            border: 1px solid #333 !important;
+            color: #fff !important;
+            height: 50px;
+            border-radius: 5px;
+        }
+        
+        .form-control:focus {
+            border-color: #00C2FF !important;
+            box-shadow: 0 0 10px rgba(0, 194, 255, 0.3) !important;
+        }
+
+        label {
+            color: #ccc;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .btn-login {
+            background: transparent;
+            border: 2px solid #00C2FF;
+            color: #00C2FF;
+            font-weight: bold;
+            padding: 12px 0;
+            border-radius: 30px;
+            transition: 0.3s;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background: #00C2FF;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 194, 255, 0.6);
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #bbb;
+        }
+        .register-link a {
+            color: #00C2FF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #00C2FF;
+            z-index: 10;
+        }
+        .toggle-password:hover {
+            color: #fff;
+        }
+ 
+        /* =========================================
+   ESTILOS MENÚ DESPLEGABLE (IDIOMA)
+   ========================================= */
+.navbar .dropdown-menu {
+    background-color: #05080f; /* Fondo Negro Profundo */
+    border: 1px solid #a52222;    /* Borde sutil */
+    padding: 0;                /* Quitar espacios extra */
+    margin-top: 10px;          /* Separación ligera del menú principal */
+    border-radius: 5px;        /* Bordes redondeados */
+    overflow: hidden;
+}
+
+.navbar .dropdown-item {
+    color: #ffffff;            /* Texto Blanco */
+    padding: 12px 20px;        /* Más espacio para clic fácil */
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.navbar .dropdown-item:hover, 
+.navbar .dropdown-item:focus {
+    background-color: #00C2FF; /* Fondo Azul Neón */
+    color: #000000;            /* Texto Negro para contraste */
+    padding-left: 25px;        /* Pequeña animación de desplazamiento */
+}
